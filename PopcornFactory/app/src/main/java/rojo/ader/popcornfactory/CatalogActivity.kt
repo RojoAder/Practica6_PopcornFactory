@@ -24,10 +24,13 @@ class CatalogActivity : AppCompatActivity() {
         setContentView(R.layout.activity_catalog)
         cargarPeliculas()
         adapter = PeliculaAdapter(this,peliculas)
-        adapter = PeliculaAdapter(this,series)
+        seriesAdapter = PeliculaAdapter(this,series)
 
         var gridPelis:GridView = findViewById(R.id.movies_catalog)
         var gridSeries:GridView = findViewById(R.id.series_catalog)
+
+        gridPelis.adapter = adapter
+        gridSeries.adapter = seriesAdapter
     }
 
     fun cargarPeliculas() {
