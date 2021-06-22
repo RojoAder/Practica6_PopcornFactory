@@ -47,9 +47,28 @@
         android:layout_marginLeft="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="asdasdasdsaasdsad"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id risus tellus. Nam semper ut risus sit amet suscipit. Integer sit amet odio nec felis venenatis tempor id non urna. Fusce risus elit, interdum sit amet bibendum non, convallis quis massa. Nam facilisis ornare felis, dapibus bibendum sapien sollicitudin vitae. "
         android:fontFamily="sans-serif-condensed"
         android:textColor="@color/babygray"
         android:textSize="14sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/but_tickets"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/round_button"
+        android:paddingHorizontal="@dimen/buttonText"
+        android:layout_marginTop="10dp"
+        android:text="Buy my ticket!"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/babygray"
+        android:textStyle="italic"
+        android:layout_marginTop="7dp"
+        android:id="@+id/seats_left"/>
 
 </LinearLayout>
