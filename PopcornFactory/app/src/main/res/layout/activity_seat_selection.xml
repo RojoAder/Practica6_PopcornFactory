@@ -390,5 +390,5 @@
         android:background="@drawable/round_button"
         android:paddingHorizontal="70dp"
         android:text="Confirm"
-        android:textColor="@color/black"
+        android:textColor="@color/black" />
 </LinearLayout>

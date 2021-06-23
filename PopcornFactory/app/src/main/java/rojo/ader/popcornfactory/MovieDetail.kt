@@ -20,22 +20,25 @@ class MovieDetail : AppCompatActivity() {
         val buyTickets: Button = findViewById(R.id.but_tickets)
 
         var id = -1
+        var ns = intent.getIntExtra("numberSeats", 0)
+
 
         titulo.setText(intent.getStringExtra("titulo"))
         imageView.setImageResource(intent.getIntExtra("header", 0))
         detail.setText(intent.getStringExtra("sinopsis"))
-        seatsLeft.setText("${intent.getIntExtra("numberSeats")} seats available")
-        id = intent.getIntExtra("pos")
+        seatsLeft.setText("$ns seats available")
+        id = intent.getIntExtra("pos", -1)
 
-        if (intent.getIntExtra("numberSeats") == 0) {
-            buyTickets.isActivated = false;
+        if (intent.getIntExtra("numberSeats", 0) == 0) {
+            buyTickets.isActivated = false
         } else {
             buyTickets.setOnClickListener {
+                buyTickets.isActivated = true
                 val intent: Intent = Intent(this, SeatSelectionActivity::class.java)
 
-                intent.putExtra("movie",id)
-                intent.putExtra("name",intent.getStringExtra("titulo"))
-
+                intent.putExtra("movie", id)
+                intent.putExtra("name", intent.getStringExtra("titulo"))
+                this.startActivity(intent)
             }
         }
 
