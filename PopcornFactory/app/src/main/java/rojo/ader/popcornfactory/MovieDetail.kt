@@ -34,6 +34,7 @@ class MovieDetail : AppCompatActivity() {
                 val intent: Intent = Intent(this, SeatSelectionActivity::class.java)
 
                 intent.putExtra("movie",id)
+                intent.putExtra("name",intent.getStringExtra("titulo"))
 
             }
         }

@@ -3,4 +3,10 @@
     <dimen name="title">25sp</dimen>
     <dimen name="buttonText">20sp</dimen>
     <dimen name="paddingButton">25dp</dimen>
+    <dimen name="marginTopRadioGroup">30dp</dimen>
+    <dimen name="hradiogroup">10dp</dimen>
+    <dimen name="radiobutton">60dp</dimen>
+    <dimen name="radiobuttontext">20sp</dimen>
+    <dimen name="hmarginradioButton">3dp</dimen>
+    <dimen name="symbols">50dp</dimen>
 </resources>
